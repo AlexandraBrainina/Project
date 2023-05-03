@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3598266555952151181}
   - component: {fileID: 7405456098401362783}
-  - component: {fileID: 4410955275536953098}
+  - component: {fileID: 789203986}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -169,7 +169,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4410955275536953098
+--- !u!114 &789203986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,12 +184,12 @@ MonoBehaviour:
   controller: {fileID: 7405456098401362783}
   speed: 12
   gravity: -9.81
-  jump: 2
+  jump: 1
   groundCheck: {fileID: 705150737471861238}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   mouseSensetivity: 3
   cameraTransform: {fileID: 7909586028762900379}
   velocity: {x: 0, y: 0, z: 0}
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPoint: {fileID: 549546283}
   bulletPrefab: {fileID: 8340156749270291604, guid: dded49447ea654e48b42925aa9d68842, type: 3}
-  bulletSpeed: 11
+  bulletSpeed: 10
 --- !u!1001 &3261290568422973317
 PrefabInstance:
   m_ObjectHideFlags: 0

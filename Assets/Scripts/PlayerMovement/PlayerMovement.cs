@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
@@ -34,7 +31,6 @@ public class Player : MonoBehaviour
         UpdateGravity();
         UpdateMovement();
         UpdateLook();
-       // UpdateSliding();
     }
 
 
@@ -91,8 +87,5 @@ public class Player : MonoBehaviour
     }
 
 
-    private void UpdateSliding()
-    {
-        
-    }
+    
 }
