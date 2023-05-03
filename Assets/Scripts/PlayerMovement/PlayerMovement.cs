@@ -1,4 +1,7 @@
-
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -21,9 +24,21 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 velocity;
     bool isGrounded;
 
+    private readonly float _treshHold = -30f;
+
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (transform.position.y < _treshHold)
+        {
+            transform.position = new Vector3(0,1,0);
+        }
     }
 
     void Update()
@@ -31,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         UpdateGravity();
         UpdateMovement();
         UpdateLook();
+        // UpdateSliding();
     }
 
 
@@ -71,8 +87,6 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
-
-        //dash____________________
     }
 
     private void UpdateLook()
@@ -87,5 +101,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    
+    private void UpdateSliding()
+    {
+    }
 }

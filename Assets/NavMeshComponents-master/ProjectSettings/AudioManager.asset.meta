@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Terrain Assets/Acorn Bringer Assets/Simplistic Low Poly Nature/Materials/Simplistic_Nature_Material.mat.meta
+guid: e27d096415c67e646bfae68f6ffd5770
+timeCreated: 1496600333
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+========
+guid: 43a8d8f43855c694381adac8bda7afc8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>>> 6740ec2 (added weapon, working on enemy):Assets/NavMeshComponents-master/ProjectSettings/AudioManager.asset.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 guid: 8cc8a1f08ced44e282a6b0ec4649effe
+<<<<<<< HEAD
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -9,3 +10,6 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+timeCreated: 1683148372
+>>>>>>> 6740ec2 (added weapon, working on enemy)

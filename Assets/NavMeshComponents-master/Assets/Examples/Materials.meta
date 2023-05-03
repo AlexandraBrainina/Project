@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Terrain Assets/Acorn Bringer Assets/Simplistic Low Poly Nature/Materials.meta
+guid: d6d1964fbfb72fd4d8eeab250693e943
+folderAsset: yes
+timeCreated: 1496597104
+licenseType: Store
+========
+guid: 1716d92973fc64cc09961634f8be8d76
+folderAsset: yes
+timeCreated: 1430737280
+licenseType: Pro
+>>>>>>>> 6740ec2 (added weapon, working on enemy):Assets/NavMeshComponents-master/Assets/Examples/Materials.meta
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
