@@ -2,6 +2,7 @@ using System;
 using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace DefaultNamespace
@@ -16,6 +17,9 @@ namespace DefaultNamespace
         public int currentHealth;
         public HealthBar healthBar;
 
+        private int _enemyDamage = 20;
+
+
         private void Start()
         {
             _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -25,9 +29,9 @@ namespace DefaultNamespace
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("Damager"))
+            if (other.gameObject.CompareTag("Enemy"))
             {
-                TakeDamage(20);
+                TakeDamage(_enemyDamage);
             }
             else if (other.gameObject.CompareTag("Finish"))
             {
@@ -35,13 +39,7 @@ namespace DefaultNamespace
             }
         }
 
-
-        private void LoadNextLevel()
-        {
-            SceneManager.LoadScene(_currentSceneIndex + 1);
-        }
-
-        public void TakeDamage(int damage)
+        private void TakeDamage(int damage)
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
@@ -58,6 +56,11 @@ namespace DefaultNamespace
             {
                 currentHealth = maxHealth;
             }
+        }
+
+        private void LoadNextLevel()
+        {
+            SceneManager.LoadScene(_currentSceneIndex + 1);
         }
     }
 }
